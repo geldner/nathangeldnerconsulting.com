@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nathan Geldner - Independent Consulting</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-name">
+                <a href="index.html">Nathan Geldner Consulting</a>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="index.html" class="active">Home</a></li>
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle">Topics ▾</a>
+                    <ul class="dropdown-menu">
+                        <li><a href="flood-risk.html">Flood Risk Analysis</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <section class="hero">
+        <div class="container">
+            <h1>Scientific Clarity in a Messy World</h1>
+            <p class="tagline">Applying simulation, applied statistics, and decision modeling to hard problems that don't have clear solutions.</p>
+        </div>
+    </section>
+
+    <main>
+        <section class="content">
+            <div class="container">
+
+                <h2>About Me</h2>
+                <div class="about-me">
+                    <img src="headshot.jpeg" alt="Nathan Geldner" class="headshot">
+                    <p>I'm an applied scientist with 10+ years of experience applying stochastic optimization, probabilistic simulation, and AI/ML to problems spanning public health, economic policy, and climate adaptation. I specialize in scientific decision-making under uncertainty: formalizing ambiguous real-world problems into tractable mathematical frameworks, designing and deploying rigorous system models (statistical, probabilistic, simulation, ML) on cloud-native infrastructure (AWS, Databricks, Spark), and partnering cross-functionally with engineering and stakeholder teams to deliver actionable guidance. I go beyond modeling potential outcomes&mdash;I map the full space of decisions and uncertain futures to isolate the thresholds between success and failure, and build the automated, scalable tooling to make that tractable in production.</p>
+                <p>Contact <a href="mailto:nathangeldnerconsulting@gmail.com">nathangeldnerconsulting@gmail.com</a> to discuss how I can help you design, improve, or quality-check your decision process or model.</p>
+                </div>
+
+                <h2>Core Competencies</h2>
+                <ul>
+                    <li>Translating messy real-world problems into concrete mathematical terms</li>
+                    <li>Using insights from subject-matter experts with hands-on experience to build mathematical, statistical, and simulation models of the problem</li>
+                    <li>Evaluating the outcomes of strategic decisions quantitatively with selective attention to the details that matter to your decision-making.</li>
+                    <li>Quality-checks and validation to verify whether a model you have on hand is appropriate and reliable, and to help you understand its limitations.</li>
+                    <li>Distilling big datasets of complex model results into actionable insights and coherent narratives using AI/ML data-mining techniques.</li>
+                    <li>Managing uncertainty&mdash;when is there a surefire win, when is there a smart gamble, and when is it time to hedge your bets because the odds can't be predicted?</li>
+                </ul>
+
+                <h2>Sub-specialties</h2>
+                <div class="accordion">
+                    <details>
+                        <summary>Flood Risk Analysis</summary>
+                        <p>I've spent a lot of time working on probabilistic flood risk analysis. That means coming up with a probabilistic model of severe storms and their behaviors, using physics-driven hydrodynamic simulations to estimate the flooding they produce, and evaluating the resulting damage to structures on the ground with and without mitigation investments. Click <a href="https://arxiv.org/pdf/2511.03871">here</a>, <a href="https://onlinelibrary.wiley.com/doi/pdfdirect/10.1111/jfr3.12786">here</a>, <a href="https://coastal.la.gov/wp-content/uploads/2021/04/CLARA_Model_Summary_Feb2021.pdf">here</a>, and <a href="https://hammer.purdue.edu/ndownloader/files/40515626">here</a> for documentation on some of the projects I've been involved in. Also click <a href="flood-risk.html">here</a> for my strongly held opinions about problems in the state of practice in flood risk analysis and some projects I'm working on to address them.</p>
+                    </details>
+                    <details>
+                        <summary>Deep Uncertainty in the Future Climate and Economy</summary>
+                        <p>I am specifically trained in decision-making under "deep uncertainty". Traditional methods for decision-making under uncertainty assume that uncertain outcomes can always be modeled with a probability distribution (i.e. that even if we don't know the exact outcome, we can guess the likelihood of each possible outcome in the same way that we know a fair 6-sided die has a 1/6 chance of landing on each number). That's often not the case; sometimes all we can do is propose an upper and lower bound, shrug our shoulders, and say "it's probably somewhere in there". We call that "deep uncertainty." Click <a href="https://www.annualreviews.org/content/journals/10.1146/annurev-resource-100518-094020">here</a> to read about structured approaches for dealing with deep uncertainty, deriving actionable insight despite profoundly limited knowledge of the future.</p>
+                    </details>
+                    <details>
+                        <summary>Participatory Modeling and Decision Processes</summary>
+                        <p>I have a strong interest in decision-support for participatory and science-informed policy decision-making. Having the analysts go off to do research and come back with a recommendation to hand to decision-makers doesn't really work. The process becomes opaque and people who feel their interests and preferences aren't served by the recommendation can inevitably find (valid) nitpicks in the methods that they believe reflect a failure to account for things they think are important or in the worst case represent question-begging or cherry-picking. But there is a better way. You can start the modeling and analysis with the decision-makers in the room. Gather buy-in at each analytical step subjective judgment call that inevitably goes into every complex modeling effort. Derive metrics and evaluate strategies informed by decision-maker and stakeholder input. When the decision-makers see themselves in the process and have visibility on how results are derived, even decision-makers who are ideologically at odds with one another can agree on the results of the process because they were part of it. Generally, the analysis is better for the involvement of the decision-makers; they (and stakeholders) have insights into the decision context, system behavior, and salient objectives that the analysts usually don't. Please reach out if you have any interest in implementing such a process in your organization, or lobbying for such a process in an organization making decisions to which you are a stake-holder.</p>
+                    </details>
+                    <details>
+                        <summary>Economic Modeling</summary>
+                        <p>I've spent a good amount of time on economic policy modeling using computable general equilibrium modeling. The core concept there is that instead of using traditional macroeconomics tools, you create a network model of microeconomic relationships between different sectors in different regions and either solve for equilibrium conditions using a system of equations or simulate dynamic evolution using differential equations. I don't have the expertise to independently develop novel models, but I have experience evaluating policy outcomes using these models while leveraging principles from decision-making under uncertainty. Click <a href="https://www.sciencedirect.com/science/article/pii/S0301421523000824">here</a> for an example.</p>
+                    </details>
+                    <details>
+                        <summary>Stochastic Simulation</summary>
+                        <p>I have a particular interest in the evolution of random processes over time. Examples include: the evolution of soil moisture in response to steady evaporation and drainage and random shocks of precipitation; the evolution of small sandy islands as they are eroded by currents some of the time but accumulate sand or silt carried onto it by currents at other times; the transmission of infectious diseases through a community or of memes through a social network; the drift of buoy in the ocean, stock prices in a market, or your rating in an e-sport on the online competitive ladder. Click <a href="https://agupubs.onlinelibrary.wiley.com/doi/full/10.1029/2025WR040606">here</a> for a relevant paper on soil moisture.</p>
+                    </details>
+                    <details>
+                        <summary>Machine Learning and Theory-Grounded Feature Engineering</summary>
+                        <p>I have a good amount of experience in machine learning. Deep neural networks are great, but you can get a lot of mileage and more interpretability out of feature engineering and other means of baking your problem structure into your modeling efforts. Deep learning can infer low-dimensional latent structure in your high-dimensional process behavior if you throw enough data and compute at it, but if you can create a (reasonable heuristic) structural model of your process as driven by theoretically grounded latent features and try to infer those with machine learning, you can make the problem much simpler. Click <a href="https://thewaterinstitute.org/floodid">here</a> to see detailed information a product I've worked to support while leveraging these methods, and <a href="https://ui.adsabs.harvard.edu/abs/2025AMS...10553108B/abstract">here</a> for a conference abstract relevant to said work.</p>
+                    </details>
+                </div>
+
+                <h2>Ongoing Projects</h2>
+                <ul>
+                    <li>I'm deeply concerned over a lack of mathematical rigor in the state of practice of flood risk analysis. The state of the art is actually quite bad, and nobody can really tell you how bad your flood risk is. I've got several ongoing projects meant to point out significant issues in the state of practice of flood risk analysis and to propose or otherwise encourage further research into alternatives. <a href="flood-risk.html">Click here for more information.</a></li>
+                    <li>I'm working on a structural joint probability model for the characteristics of atmospheric river events over the Pacific Northwest. I'll share more information when that's further along.</li>
+                    <li>There are a couple other minor methods papers I need to get out based on work I did between graduate school and my last job, including a way to cut your compute costs by 10-30x when running computationally expensive simulations of random inputs under adequate smoothness conditions. I've also got a few modeling tools that I need to tidy up and get on github.</li>
+                    <!--<li>I've got a paper in review at the moment on the likely indirect climate impacts of AI. Most of the (emissions) conversation revolves around direct consumption of fossil-fuel-generated power and highly speculative avoided emissions from benefits to renewable. The trouble is, fossil fuel producers get to use AI too. I'll share more information once the paper gets accepted.</li>
+                --><li>I'm working on a Python package to apply some simple time series forecasting and simulation approaches (with attention to aleatory uncertainty) to residential power demand and solar panel generation that might help customers decide between alternative electricity pricing schemes ("tariffs") from their power companies. It will also help with other decisions like whether to buy a battery and what charging/discharging strategy to use, on the basis of probabilistic estimates of the financial value of those decisions and with the option of evaluating the robustness of those choices to climate and economic change under a Robust Decision-Making framework. I'll put it on my github once it's a little closer to fully baked.</li>
+                </ul>
+
+                <h2>Other Fun Things I'm Open to Collaborating On</h2>
+                <ul>
+                    <li>I'm a big fan of specialty coffee, where batches are small and freshness matters a lot (and where black coffee sometimes tastes like strawberries, but that's not the mathy part I can help with). Shops need to buy enough beans to meet demand, but buying too many beans means some will get stale and go to waste. This boils down to what's known as the newsvendor problem, and I'd love to help coffee shops and suppliers address it.</li>
+                    <li>I like videogames&mdash;mostly single player RPGs but I also enjoy Overwatch and am fairly good at it (my rank peaked at Masters). The way competitive matchmaking ranks evolve can be characterized as a biased Brownian motion and can be analyzed through a stochastic processes lens. I'm interested in investigating how the construction of matchmaking and ranking systems influences ranking accuracy and match quality.
+                        <ul>
+                            <li>Also on the videogame front and relating to Overwatch, I'm convinced that by applying lightweight machine learning techniques with intelligent feature engineering to time series data from Overwatch matches, you can get major sabermetrics-style insights into the effectiveness of different tactics across various levels of play.</li>
+                            <li>I am also convinced that a similar approach combined with agent-based modeling with coupled Markov decision processes can enable AI-controlled opponents that are actually good and worth playing against.</li>
+                        </ul>
+                    </li>
+                    <li>I'm interested in helping mental healthcare platforms develop data visualization tools to help care providers gain greater insight into the history and progress of their patients with both qualitative and quantitative measures.</li>
+                    <li>I'm interested in helping to develop a network model of the myofascial system so that care providers (massage therapists, physical therapists) or individuals dealing with myofascial pain might better be able to identify problem areas based on the presence and absence of trigger points along certain myofascial elements, and possibly to help infer which muscle groups must be addressed with physical therapy and strength training.</li>
+                </ul>
+
+                <div class="contact-section">
+                    <h2 style="border: none; margin-top: 0; padding: 0;">Contact</h2>
+                    <p><a href="mailto:nathangeldnerconsulting@gmail.com" class="contact-email">nathangeldnerconsulting@gmail.com</a></p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 Nathan Geldner Consulting. All rights reserved.</p>
+        </div>
+    </footer>
+</body>
+</html>
