@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stochastic Simulation - Nathan Geldner</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-name">
+                <a href="index.html">Nathan Geldner Consulting</a>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="index.html">Home</a></li>
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle active">Research ▾</a>
+                    <ul class="dropdown-menu">
+                        <li><a href="flood-risk.html">Flood Risk Analysis</a></li>
+                        <li><a href="deep-uncertainty.html">Deep Uncertainty</a></li>
+                        <li><a href="stochastic-simulation.html" class="active">Stochastic Simulation</a></li>
+                        <li><a href="economic-modeling.html">Economic Modeling</a></li>
+                        <li><a href="machine-learning.html">Machine Learning &amp; Feature Engineering</a></li>
+                        <li><a href="participatory-modeling.html">Participatory Modeling</a></li>
+                    </ul>
+                </li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="projects.html">Projects</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <header class="page-header">
+        <div class="container">
+            <h1>Stochastic Simulation</h1>
+            <p class="subtitle">The evolution of random processes over time</p>
+        </div>
+    </header>
+
+    <main>
+        <section class="content">
+            <div class="container">
+                <p class="breadcrumb"><a href="index.html#research">&larr; Back to Research Areas</a></p>
+
+                <h2>Overview</h2>
+                <p>I have a particular interest in the evolution of random processes over time. Examples include: the evolution of soil moisture in response to steady evaporation and drainage and random shocks of precipitation; the evolution of small sandy islands as they are eroded by currents some of the time but accumulate sand or silt carried onto it by currents at other times; the transmission of infectious diseases through a community or of memes through a social network; the drift of a buoy in the ocean, stock prices in a market, or your rating in an e-sport on the online competitive ladder.</p>
+                <p>What these have in common is that the interesting behavior isn't in the average path&mdash;it's in the variability around it, the persistence of shocks, and the probability of ending up somewhere extreme. Systems like these are frequently modeled with a deterministic trend plus noise treated as an afterthought, which systematically understates how often the process visits the states you actually care about.</p>
+
+                <h2>Related Work</h2>
+                <p>Much of my applied work in flood risk depends directly on this. Antecedent soil moisture is a stochastic process, and the worst floods often occur when a storm arrives on ground that a previous storm already saturated&mdash;a dependency that models assuming average soil moisture conditions cannot represent. I've also got a methods paper pending on a way to cut compute costs by 10&ndash;30x when running computationally expensive simulations of random inputs under adequate smoothness conditions.</p>
+
+                <h2>Further Reading</h2>
+                <ul class="references-list">
+                    <li><a href="https://agupubs.onlinelibrary.wiley.com/doi/full/10.1029/2025WR040606">A stochastic treatment of soil moisture dynamics</a>. <em>Water Resources Research</em>, 2025.</li>
+                </ul>
+
+                <div class="contact-section">
+                    <h2 style="border: none; margin-top: 0; padding: 0;">Got a process like this?</h2>
+                    <p><a href="mailto:nathangeldnerconsulting@gmail.com" class="contact-email">nathangeldnerconsulting@gmail.com</a></p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 Nathan Geldner Consulting. All rights reserved.</p>
+        </div>
+    </footer>
+</body>
+</html>

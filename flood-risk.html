@@ -15,11 +15,18 @@
             <ul class="nav-menu">
                 <li><a href="index.html">Home</a></li>
                 <li class="dropdown">
-                    <a href="#" class="dropdown-toggle active">Topics ▾</a>
+                    <a href="#" class="dropdown-toggle active">Research ▾</a>
                     <ul class="dropdown-menu">
                         <li><a href="flood-risk.html" class="active">Flood Risk Analysis</a></li>
+                        <li><a href="deep-uncertainty.html">Deep Uncertainty</a></li>
+                        <li><a href="stochastic-simulation.html">Stochastic Simulation</a></li>
+                        <li><a href="economic-modeling.html">Economic Modeling</a></li>
+                        <li><a href="machine-learning.html">Machine Learning &amp; Feature Engineering</a></li>
+                        <li><a href="participatory-modeling.html">Participatory Modeling</a></li>
                     </ul>
                 </li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="projects.html">Projects</a></li>
             </ul>
         </div>
     </nav>
@@ -33,6 +40,12 @@
     <main>
         <section class="content">
             <div class="container">
+                <p class="breadcrumb"><a href="index.html#research">&larr; Back to Research Areas</a></p>
+
+                <h2>What This Work Involves</h2>
+                <p>I've spent a lot of time working on probabilistic flood risk analysis. That means coming up with a probabilistic model of severe storms and their behaviors, using physics-driven hydrodynamic simulations to estimate the flooding they produce, and evaluating the resulting damage to structures on the ground with and without mitigation investments.</p>
+                <p>Documentation for some of the projects I've been involved in is available <a href="https://arxiv.org/pdf/2511.03871">here</a>, <a href="https://onlinelibrary.wiley.com/doi/pdfdirect/10.1111/jfr3.12786">here</a>, <a href="https://coastal.la.gov/wp-content/uploads/2021/04/CLARA_Model_Summary_Feb2021.pdf">here</a>, and <a href="https://hammer.purdue.edu/ndownloader/files/40515626">here</a>. Below are my strongly held opinions about problems in the state of practice, and some projects I'm working on to address them.</p>
+
                 <h2>Addressing Critical Gaps in Flood Risk Assessment</h2>
                 <p>There is a hidden crisis in the field of flood risk management. The science is simply not mature enough for us to accurately understand flood risk. Corporate data-vendors are selling flood risk estimates while refusing to disclose their uncertainty. Other actors are selling data to states and municipalities for planning purposes generated in ways that are simply mathematically incorrect. Well-intentioned analysts are structurally pushed towards releasing modeling results that they know are inadequate; mostly their jobs are to bill hours and re-do their last analysis in a new location. It is currently nobody's job to make sure that the models being used actually work.</p>
                 <p>It is widely known that FEMA floodmaps are outdated both in content and methodology (through no fault of FEMA staff themselves &ndash; they have neither the funding nor the congressional mandate to properly characterize flood risk across the United States). Corporate data-vendors claim to provide a solution, but refuse to disclose uncertainty information&mdash;violating established standards of practice in applied statistics&mdash;and hide from scientific scrutiny with closed-source modeling practices. From the information they do disclose, it is clear that they systematically ignore critical flood drivers from consideration, and assume that flood outcomes are uniquely determined by a single variable measuring rainfall or streamflow severity. The truth is that storms which cause flooding are more than a single number&mdash;for a given storm, rainfall varies in time and space and streamflow rises to a peak before declining. Models typically assume an average soil moisture condition, when oftentimes the worst floods occur when the soil has already been saturated by a recent storm. Modeling flood risk with a single scalar variable and treating everything else as constant systematically underestimates the variability of flooding and therefore underestimates the severity of the worst and most impactful floods.</p>

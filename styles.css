@@ -284,11 +284,32 @@ main {
     line-height: 1.6;
 }
 
+/* Lead paragraph (home page intro) */
+.lead {
+    font-size: 1.1rem;
+    line-height: 1.65;
+    color: var(--color-text) !important;
+    margin-bottom: 0.5rem;
+}
+
+/* Anchor targets clear the sticky navbar */
+[id] {
+    scroll-margin-top: calc(var(--nav-height) + 1rem);
+}
+
 /* Specialty cards (home page) */
 .specialties-grid {
     display: grid;
     gap: 1.25rem;
     margin: 1.5rem 0;
+}
+.specialties-grid.cols-2 {
+    grid-template-columns: repeat(2, 1fr);
+}
+@media (max-width: 768px) {
+    .specialties-grid.cols-2 {
+        grid-template-columns: 1fr;
+    }
 }
 .specialty-card {
     background: var(--color-surface);
@@ -296,6 +317,8 @@ main {
     border-radius: 8px;
     padding: 1.25rem 1.5rem;
     transition: box-shadow 0.2s, border-color 0.2s;
+    display: flex;
+    flex-direction: column;
 }
 .specialty-card:hover {
     box-shadow: 0 4px 16px rgba(0,0,0,0.08);
@@ -306,9 +329,24 @@ main {
     border: none;
     padding: 0;
 }
+.specialty-card h3 a {
+    color: var(--color-accent);
+}
+.specialty-card h3 a:hover {
+    color: var(--color-accent-light);
+    text-decoration: none;
+}
 .specialty-card p {
     font-size: 0.95rem;
     margin: 0;
+}
+.specialty-card p + p {
+    margin-top: 0.75rem;
+}
+.card-link {
+    margin-top: auto !important;
+    padding-top: 0.75rem;
+    font-weight: 500;
 }
 
 /* Initiatives list (flood risk page) */

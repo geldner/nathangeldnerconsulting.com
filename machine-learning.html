@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Machine Learning &amp; Feature Engineering - Nathan Geldner</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-name">
+                <a href="index.html">Nathan Geldner Consulting</a>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="index.html">Home</a></li>
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle active">Research ▾</a>
+                    <ul class="dropdown-menu">
+                        <li><a href="flood-risk.html">Flood Risk Analysis</a></li>
+                        <li><a href="deep-uncertainty.html">Deep Uncertainty</a></li>
+                        <li><a href="stochastic-simulation.html">Stochastic Simulation</a></li>
+                        <li><a href="economic-modeling.html">Economic Modeling</a></li>
+                        <li><a href="machine-learning.html" class="active">Machine Learning &amp; Feature Engineering</a></li>
+                        <li><a href="participatory-modeling.html">Participatory Modeling</a></li>
+                    </ul>
+                </li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="projects.html">Projects</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <header class="page-header">
+        <div class="container">
+            <h1>Machine Learning and Theory-Grounded Feature Engineering</h1>
+            <p class="subtitle">Baking problem structure into the model instead of buying it with data and compute</p>
+        </div>
+    </header>
+
+    <main>
+        <section class="content">
+            <div class="container">
+                <p class="breadcrumb"><a href="index.html#research">&larr; Back to Research Areas</a></p>
+
+                <h2>Overview</h2>
+                <p>I have a good amount of experience in machine learning. Deep neural networks are great, but you can get a lot of mileage and more interpretability out of feature engineering and other means of baking your problem structure into your modeling efforts.</p>
+                <p>Deep learning can infer low-dimensional latent structure in your high-dimensional process behavior if you throw enough data and compute at it, but if you can create a (reasonable heuristic) structural model of your process as driven by theoretically grounded latent features and try to infer those with machine learning, you can make the problem much simpler. You also get a model whose behavior you can explain to a stakeholder, whose failure modes you can anticipate, and whose extrapolation beyond the training distribution you have some reason to trust.</p>
+                <p>This matters most in exactly the settings where black-box performance is least defensible: safety-critical infrastructure decisions, regulatory contexts, and any application where the events you care about most are the ones you have the least data on.</p>
+
+                <h2>Further Reading</h2>
+                <ul class="references-list">
+                    <li><a href="https://thewaterinstitute.org/floodid">FloodID</a>, The Water Institute &mdash; detailed information on a product I've worked to support while leveraging these methods.</li>
+                    <li><a href="https://ui.adsabs.harvard.edu/abs/2025AMS...10553108B/abstract">Conference abstract</a> relevant to that work, American Meteorological Society, 2025.</li>
+                </ul>
+
+                <div class="contact-section">
+                    <h2 style="border: none; margin-top: 0; padding: 0;">Contact</h2>
+                    <p><a href="mailto:nathangeldnerconsulting@gmail.com" class="contact-email">nathangeldnerconsulting@gmail.com</a></p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 Nathan Geldner Consulting. All rights reserved.</p>
+        </div>
+    </footer>
+</body>
+</html>

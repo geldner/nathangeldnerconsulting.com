@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projects - Nathan Geldner</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-name">
+                <a href="index.html">Nathan Geldner Consulting</a>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="index.html">Home</a></li>
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle">Research ▾</a>
+                    <ul class="dropdown-menu">
+                        <li><a href="flood-risk.html">Flood Risk Analysis</a></li>
+                        <li><a href="deep-uncertainty.html">Deep Uncertainty</a></li>
+                        <li><a href="stochastic-simulation.html">Stochastic Simulation</a></li>
+                        <li><a href="economic-modeling.html">Economic Modeling</a></li>
+                        <li><a href="machine-learning.html">Machine Learning &amp; Feature Engineering</a></li>
+                        <li><a href="participatory-modeling.html">Participatory Modeling</a></li>
+                    </ul>
+                </li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="projects.html" class="active">Projects</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <header class="page-header">
+        <div class="container">
+            <h1>Projects</h1>
+            <p class="subtitle">What I'm working on now, and what I'd like to work on next</p>
+        </div>
+    </header>
+
+    <main>
+        <section class="content">
+            <div class="container">
+
+                <h2>Ongoing Projects</h2>
+                <ul class="projects-list">
+                    <li>I'm deeply concerned over a lack of mathematical rigor in the state of practice of flood risk analysis. The state of the art is actually quite bad, and nobody can really tell you how bad your flood risk is. I've got several ongoing projects meant to point out significant issues in the state of practice of flood risk analysis and to propose or otherwise encourage further research into alternatives. <a href="flood-risk.html">Click here for more information.</a></li>
+                    <li>I'm working on a structural joint probability model for the characteristics of atmospheric river events over the Pacific Northwest. I'll share more information when that's further along.</li>
+                    <li>There are a couple other minor methods papers I need to get out based on work I did between graduate school and my last job, including a way to cut your compute costs by 10-30x when running computationally expensive simulations of random inputs under adequate smoothness conditions. I've also got a few modeling tools that I need to tidy up and get on github.</li>
+                    <!--<li>I've got a paper in review at the moment on the likely indirect climate impacts of AI. Most of the (emissions) conversation revolves around direct consumption of fossil-fuel-generated power and highly speculative avoided emissions from benefits to renewable. The trouble is, fossil fuel producers get to use AI too. I'll share more information once the paper gets accepted.</li>
+                --><li>I'm working on a Python package to apply some simple time series forecasting and simulation approaches (with attention to aleatory uncertainty) to residential power demand and solar panel generation that might help customers decide between alternative electricity pricing schemes ("tariffs") from their power companies. It will also help with other decisions like whether to buy a battery and what charging/discharging strategy to use, on the basis of probabilistic estimates of the financial value of those decisions and with the option of evaluating the robustness of those choices to climate and economic change under a Robust Decision-Making framework. I'll put it on my github once it's a little closer to fully baked.</li>
+                </ul>
+
+                <h2>Other Fun Things I'm Open to Collaborating On</h2>
+                <ul class="collab-list">
+                    <li>I'm a big fan of specialty coffee, where batches are small and freshness matters a lot (and where black coffee sometimes tastes like strawberries, but that's not the mathy part I can help with). Shops need to buy enough beans to meet demand, but buying too many beans means some will get stale and go to waste. This boils down to what's known as the newsvendor problem, and I'd love to help coffee shops and suppliers address it.</li>
+                    <li>I like videogames&mdash;mostly single player RPGs but I also enjoy Overwatch and am fairly good at it (my rank peaked at Masters). The way competitive matchmaking ranks evolve can be characterized as a biased Brownian motion and can be analyzed through a stochastic processes lens. I'm interested in investigating how the construction of matchmaking and ranking systems influences ranking accuracy and match quality.
+                        <ul>
+                            <li>Also on the videogame front and relating to Overwatch, I'm convinced that by applying lightweight machine learning techniques with intelligent feature engineering to time series data from Overwatch matches, you can get major sabermetrics-style insights into the effectiveness of different tactics across various levels of play.</li>
+                            <li>I am also convinced that a similar approach combined with agent-based modeling with coupled Markov decision processes can enable AI-controlled opponents that are actually good and worth playing against.</li>
+                        </ul>
+                    </li>
+                    <li>I'm interested in helping mental healthcare platforms develop data visualization tools to help care providers gain greater insight into the history and progress of their patients with both qualitative and quantitative measures.</li>
+                    <li>I'm interested in helping to develop a network model of the myofascial system so that care providers (massage therapists, physical therapists) or individuals dealing with myofascial pain might better be able to identify problem areas based on the presence and absence of trigger points along certain myofascial elements, and possibly to help infer which muscle groups must be addressed with physical therapy and strength training.</li>
+                </ul>
+
+                <div class="contact-section">
+                    <h2 style="border: none; margin-top: 0; padding: 0;">Interested in any of these?</h2>
+                    <p><a href="mailto:nathangeldnerconsulting@gmail.com" class="contact-email">nathangeldnerconsulting@gmail.com</a></p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 Nathan Geldner Consulting. All rights reserved.</p>
+        </div>
+    </footer>
+</body>
+</html>
