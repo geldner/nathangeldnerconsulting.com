@@ -388,6 +388,31 @@ main {
     margin-bottom: 0.75rem;
 }
 
+/* Footnotes */
+.footnotes {
+    font-size: 0.85rem;
+    line-height: 1.55;
+}
+.footnotes li {
+    margin-bottom: 0.6rem;
+}
+.footnotes li:target {
+    background: var(--color-accent-bg);
+    border-radius: 4px;
+    padding: 0.25rem 0.5rem;
+    margin-left: -0.5rem;
+}
+.fn-ref {
+    font-size: 0.7em;
+    line-height: 0;
+    vertical-align: super;
+    font-weight: 600;
+}
+.fn-back {
+    margin-left: 0.3rem;
+    text-decoration: none;
+}
+
 /* PDF embed */
 .pdf-container {
     border: 1px solid var(--color-border);
